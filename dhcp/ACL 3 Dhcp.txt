@@ -1,0 +1,92 @@
+access-list 130 permit udp any eq 67 any eq 68
+access-list 130 permit udp any eq 68 any eq 67
+access-list 130 permit ip 192.168.15.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 130 permit ip 192.168.15.0 0.0.0.255 192.168.8.0 0.0.0.255
+access-list 130 permit ip 192.168.15.0 0.0.0.255 192.168.22.0 0.0.0.255
+access-list 130 permit ip 192.168.15.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 130 permit ip 192.168.15.0 0.0.0.255 host 192.168.37.2
+access-list 130 deny ip 192.168.15.0 0.0.0.255 any
+interface FastEthernet0/0
+ip address 192.168.15.1 255.255.255.0
+ip access-group 130 in
+exit
+
+
+access-list 131 permit udp any eq 67 any eq 68
+access-list 131 permit udp any eq 68 any eq 67
+access-list 131 permit ip 192.168.16.0 0.0.0.255 192.168.2.0 0.0.0.255
+access-list 131 permit ip 192.168.16.0 0.0.0.255 192.168.9.0 0.0.0.255
+access-list 131 permit ip 192.168.16.0 0.0.0.255 192.168.23.0 0.0.0.255
+access-list 131 permit ip 192.168.16.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 131 permit ip 192.168.16.0 0.0.0.255 host 192.168.37.2
+access-list 131 deny ip 192.168.16.0 0.0.0.255 any
+interface FastEthernet1/0
+ ip address 192.168.16.1 255.255.255.0
+ ip access-group 131 in
+exit
+
+access-list 132 permit udp any eq 67 any eq 68
+access-list 132 permit udp any eq 68 any eq 67
+access-list 132 permit ip 192.168.17.0 0.0.0.255 192.168.3.0 0.0.0.255
+access-list 132 permit ip 192.168.17.0 0.0.0.255 192.168.10.0 0.0.0.255
+access-list 132 permit ip 192.168.17.0 0.0.0.255 192.168.24.0 0.0.0.255
+access-list 132 permit ip 192.168.17.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 132 permit ip 192.168.17.0 0.0.0.255 host 192.168.37.2
+access-list 132 deny ip 192.168.17.0 0.0.0.255 any
+interface FastEthernet2/0
+ ip address 192.168.17.1 255.255.255.0
+ ip access-group 132 in
+exit
+
+access-list 133 permit udp any eq 67 any eq 68
+access-list 133 permit udp any eq 68 any eq 67
+access-list 133 permit ip 192.168.18.0 0.0.0.255 192.168.4.0 0.0.0.255
+access-list 133 permit ip 192.168.18.0 0.0.0.255 192.168.11.0 0.0.0.255
+access-list 133 permit ip 192.168.18.0 0.0.0.255 192.168.25.0 0.0.0.255
+access-list 133 permit ip 192.168.18.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 133 permit ip 192.168.18.0 0.0.0.255 host 192.168.37.2
+access-list 133 deny ip 192.168.18.0 0.0.0.255 any
+interface FastEthernet3/0
+ ip address 192.168.18.1 255.255.255.0
+ ip access-group 133 in
+exit
+
+
+access-list 134 permit udp any eq 67 any eq 68
+access-list 134 permit udp any eq 68 any eq 67
+access-list 134 permit ip 192.168.19.0 0.0.0.255 192.168.5.0 0.0.0.255
+access-list 134 permit ip 192.168.19.0 0.0.0.255 192.168.12.0 0.0.0.255
+access-list 134 permit ip 192.168.19.0 0.0.0.255 192.168.26.0 0.0.0.255
+access-list 134 permit ip 192.168.19.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 134 permit ip 192.168.19.0 0.0.0.255 host 192.168.37.2
+access-list 134 deny ip 192.168.19.0 0.0.0.255 any
+interface FastEthernet4/0
+ ip address 192.168.19.1 255.255.255.0
+ ip access-group 134 in
+exit
+
+access-list 135 permit udp any eq 67 any eq 68
+access-list 135 permit udp any eq 68 any eq 67
+access-list 135 permit ip 192.168.20.0 0.0.0.255 192.168.6.0 0.0.0.255
+access-list 135 permit ip 192.168.20.0 0.0.0.255 192.168.13.0 0.0.0.255
+access-list 135 permit ip 192.168.20.0 0.0.0.255 192.168.27.0 0.0.0.255
+access-list 135 permit ip 192.168.20.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 135 permit ip 192.168.20.0 0.0.0.255 host 192.168.37.2
+access-list 135 deny ip 192.168.20.0 0.0.0.255 any
+interface FastEthernet5/0
+ ip address 192.168.20.1 255.255.255.0
+ ip access-group 135 in
+exit
+
+access-list 136 permit udp any eq 67 any eq 68
+access-list 136 permit udp any eq 68 any eq 67
+access-list 136 permit ip 192.168.21.0 0.0.0.255 192.168.7.0 0.0.0.255
+access-list 136 permit ip 192.168.21.0 0.0.0.255 192.168.14.0 0.0.0.255
+access-list 136 permit ip 192.168.21.0 0.0.0.255 192.168.28.0 0.0.0.255
+access-list 136 permit ip 192.168.21.0 0.0.0.255 192.168.35.0 0.0.0.255
+access-list 136 permit ip 192.168.21.0 0.0.0.255 host 192.168.37.2
+access-list 136 deny ip 192.168.21.0 0.0.0.255 any
+interface FastEthernet6/0
+ ip address 192.168.21.1 255.255.255.0
+ ip access-group 136 in
+exit

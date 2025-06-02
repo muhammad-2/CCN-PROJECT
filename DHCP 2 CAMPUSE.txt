@@ -1,0 +1,49 @@
+ip dhcp excluded-address 192.168.8.1
+ip dhcp excluded-address 192.168.9.1
+ip dhcp excluded-address 192.168.10.1
+ip dhcp excluded-address 192.168.11.1
+ip dhcp excluded-address 192.168.12.1
+ip dhcp excluded-address 192.168.13.1
+ip dhcp excluded-address 192.168.14.1
+
+ip dhcp pool H11_Communication_Lab
+network 192.168.8.0 255.255.255.0
+default-router 192.168.8.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool H11_Computing_Lab
+network 192.168.9.0 255.255.255.0
+default-router 192.168.9.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool H11_Electrical_Machines_Lab
+network 192.168.10.0 255.255.255.0
+default-router 192.168.10.1
+dns-server 192.168.34.2
+exit
+
+ip dhcp pool H11_Electronics_Lab
+network 192.168.11.0 255.255.255.0
+default-router 192.168.11.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool H11_FYP_Hardware_Lab
+network 192.168.12.0 255.255.255.0
+default-router 192.168.12.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool H11_Embedded_Systems_Lab
+network 192.168.13.0 255.255.255.0
+default-router 192.168.13.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool H11_Control_Systems_Lab
+network 192.168.14.0 255.255.255.0
+default-router 192.168.14.1
+dns-server 192.168.34.3
+exit

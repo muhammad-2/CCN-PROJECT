@@ -1,0 +1,51 @@
+ip dhcp excluded-address 192.168.15.1
+ip dhcp excluded-address 192.168.16.1
+ip dhcp excluded-address 192.168.17.1
+ip dhcp excluded-address 192.168.18.1
+ip dhcp excluded-address 192.168.19.1
+ip dhcp excluded-address 192.168.20.1
+ip dhcp excluded-address 192.168.21.1
+
+
+
+ip dhcp pool KHI_Communication_Lab
+network 192.168.15.0 255.255.255.0
+default-router 192.168.15.1
+dns-server 192.168.35.3
+exit
+
+ip dhcp pool KHI_Computing_Lab
+network 192.168.16.0 255.255.255.0
+default-router 192.168.16.1
+dns-server 192.168.35.3
+exit
+
+ip dhcp pool KHI_Electrical_Machines_Lab
+network 192.168.17.0 255.255.255.0
+default-router 192.168.17.1
+dns-server 192.168.35.3
+exit
+
+ip dhcp pool KHI_Electronics_Lab
+network 192.168.18.0 255.255.255.0
+default-router 192.168.18.1
+dns-server 192.168.35.3
+exit
+
+ip dhcp pool KHI_FYP_Hardware_Lab
+network 192.168.19.0 255.255.255.0
+default-router 192.168.19.1
+dns-server 192.168.35.3
+exit
+
+ip dhcp pool KHI_Embedded_Systems_Lab
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.1
+dns-server 192.168.35.3
+exit
+
+ip dhcp pool KHI_Control_Systems_Lab
+network 192.168.21.0 255.255.255.0
+default-router 192.168.21.1
+dns-server 192.168.35.3
+exit

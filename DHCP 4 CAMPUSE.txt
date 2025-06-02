@@ -1,0 +1,50 @@
+ip dhcp excluded-address 192.168.22.1
+ip dhcp excluded-address 192.168.23.1
+ip dhcp excluded-address 192.168.24.1
+ip dhcp excluded-address 192.168.25.1
+ip dhcp excluded-address 192.168.26.1
+ip dhcp excluded-address 192.168.27.1
+ip dhcp excluded-address 192.168.28.1
+
+
+ip dhcp pool E8_Computing_Lab
+network 192.168.22.0 255.255.255.0
+default-router 192.168.22.1
+dns-server 192.168.36.3
+exit
+
+ip dhcp pool E8_Electrical_Machines_Lab
+network 192.168.23.0 255.255.255.0
+default-router 192.168.23.1
+dns-server 192.168.36.3
+exit
+
+ip dhcp pool E8_Electronics_Lab
+network 192.168.24.0 255.255.255.0
+default-router 192.168.24.1
+dns-server 192.168.36.3
+exit
+
+ip dhcp pool E8_FYP_Hardware_Lab
+network 192.168.25.0 255.255.255.0
+default-router 192.168.25.1
+dns-server 192.168.36.3
+exit
+
+ip dhcp pool E8_Embedded_Systems_Lab
+network 192.168.26.0 255.255.255.0
+default-router 192.168.26.1
+dns-server 192.168.36.3
+exit
+
+ip dhcp pool E8_Control_Systems_Lab
+network 192.168.27.0 255.255.255.0
+default-router 192.168.27.1
+dns-server 192.168.36.3
+exit
+
+ip dhcp pool E8_Communication_Lab
+network 192.168.28.0 255.255.255.0
+default-router 192.168.28.1
+dns-server 192.168.36.3
+exit

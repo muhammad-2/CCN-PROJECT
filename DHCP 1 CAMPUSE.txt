@@ -1,0 +1,49 @@
+ip dhcp excluded-address 192.168.1.1
+ip dhcp excluded-address 192.168.2.1
+ip dhcp excluded-address 192.168.3.1
+ip dhcp excluded-address 192.168.4.1
+ip dhcp excluded-address 192.168.5.1
+ip dhcp excluded-address 192.168.6.1
+ip dhcp excluded-address 192.168.7.1
+
+ip dhcp pool Communication_Lab
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool Computing_Lab
+network 192.168.2.0 255.255.255.0
+default-router 192.168.2.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool Electrical_Machines_Lab
+network 192.168.3.0 255.255.255.0
+default-router 192.168.3.1
+dns-server 192.168.34.2
+exit
+
+ip dhcp pool Electronics_Lab
+network 192.168.4.0 255.255.255.0
+default-router 192.168.4.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool FYP_Hardware_Lab
+network 192.168.5.0 255.255.255.0
+default-router 192.168.5.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool Embedded_Systems_Lab
+network 192.168.6.0 255.255.255.0
+default-router 192.168.6.1
+dns-server 192.168.34.3
+exit
+
+ip dhcp pool Control_Systems_Lab
+network 192.168.7.0 255.255.255.0
+default-router 192.168.7.1
+dns-server 192.168.34.3
+exit
