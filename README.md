@@ -1,0 +1,1 @@
+This repository contains the complete implementation of our Computer Communication & Networks Lab Project at Bahria University. It includes network topologies, VLAN configurations, ACL rules, OSPF routing setup, simulation files (Cisco Packet Tracer), HTML websites for each campus, and the final project report in LaTeX.
